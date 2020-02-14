@@ -3,4 +3,3 @@ def distance(a, b):
         raise ValueError("Different lengths detected")
     
     return len([i for i, j in zip(a, b) if i != j])
-    pass
