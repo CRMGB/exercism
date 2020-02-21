@@ -41,9 +41,7 @@ class Clock:
         if self.minutes == 60:
             self.hour += 1
             self.minutes = 0
-        #Adding the extra '0' on the left is the input is missing it
-            
+        #Adding the extra '0' on the left if the input is missing it
         self.minutes = "0" + str(self.minutes) if len(str(self.minutes))<2 else str(self.minutes)
         self.hour = "0" + str(self.hour) if len(str(self.hour))<2 else str(self.hour)
-        
         return self.hour + ":" + self.minutes
